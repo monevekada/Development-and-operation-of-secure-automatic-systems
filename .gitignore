@@ -1,0 +1,12 @@
+*.ilk
+*.pdb
+moc_*.cpp
+ui_*.h
+Makefile
+*.stash
+*.obj
+.vs/
+*.apk
+*.exe
+passThrough/x64/
+SimpleOpener/x64/
