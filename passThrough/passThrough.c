@@ -135,7 +135,7 @@ PtDoRequestOperationStatus(
 //
 
 CONST FLT_OPERATION_REGISTRATION Callbacks[] = { // Содержит структуру данных системных событий
-    /*{ IRP_MJ_CREATE,
+    /*{IRP_MJ_CREATE,
       0,
       PtPreOperationPassThrough,
       PtPostOperationPassThrough },
@@ -160,7 +160,7 @@ CONST FLT_OPERATION_REGISTRATION Callbacks[] = { // Содержит структуру данных си
       PtPreOperationPassThrough,
       PtPostOperationPassThrough },
 
-      /*{ IRP_MJ_QUERY_INFORMATION,
+      /*{IRP_MJ_QUERY_INFORMATION,
       0,
       PtPreOperationPassThrough,
       PtPostOperationPassThrough },
@@ -185,152 +185,153 @@ CONST FLT_OPERATION_REGISTRATION Callbacks[] = { // Содержит структуру данных си
       PtPreOperationPassThrough,
       PtPostOperationPassThrough },
 
-    /*{IRP_MJ_QUERY_VOLUME_INFORMATION,
-      0,
-      PtPreOperationPassThrough,
-      PtPostOperationPassThrough },
+      /*{IRP_MJ_QUERY_VOLUME_INFORMATION,
+        0,
+        PtPreOperationPassThrough,
+        PtPostOperationPassThrough },
 
-    { IRP_MJ_SET_VOLUME_INFORMATION,
-      0,
-      PtPreOperationPassThrough,
-      PtPostOperationPassThrough },
+      { IRP_MJ_SET_VOLUME_INFORMATION,
+        0,
+        PtPreOperationPassThrough,
+        PtPostOperationPassThrough },
 
-    { IRP_MJ_DIRECTORY_CONTROL,
-      0,
-      PtPreOperationPassThrough,
-      PtPostOperationPassThrough },
+      { IRP_MJ_DIRECTORY_CONTROL,
+        0,
+        PtPreOperationPassThrough,
+        PtPostOperationPassThrough },
 
-    { IRP_MJ_FILE_SYSTEM_CONTROL,
-      0,
-      PtPreOperationPassThrough,
-      PtPostOperationPassThrough },
+      { IRP_MJ_FILE_SYSTEM_CONTROL,
+        0,
+        PtPreOperationPassThrough,
+        PtPostOperationPassThrough },
 
-    { IRP_MJ_DEVICE_CONTROL,
-      0,
-      PtPreOperationPassThrough,
-      PtPostOperationPassThrough },
+      { IRP_MJ_DEVICE_CONTROL,
+        0,
+        PtPreOperationPassThrough,
+        PtPostOperationPassThrough },
 
-    { IRP_MJ_INTERNAL_DEVICE_CONTROL,
-      0,
-      PtPreOperationPassThrough,
-      PtPostOperationPassThrough },
+      { IRP_MJ_INTERNAL_DEVICE_CONTROL,
+        0,
+        PtPreOperationPassThrough,
+        PtPostOperationPassThrough },
 
-    { IRP_MJ_SHUTDOWN,
-      0,
-      PtPreOperationNoPostOperationPassThrough,
-      NULL },                               //post operations not supported
+      { IRP_MJ_SHUTDOWN,
+        0,
+        PtPreOperationNoPostOperationPassThrough,
+        NULL },                               //post operations not supported
 
-    { IRP_MJ_LOCK_CONTROL,
-      0,
-      PtPreOperationPassThrough,
-      PtPostOperationPassThrough },
+      { IRP_MJ_LOCK_CONTROL,
+        0,
+        PtPreOperationPassThrough,
+        PtPostOperationPassThrough },
 
-    { IRP_MJ_CLEANUP,
-      0,
-      PtPreOperationPassThrough,
-      PtPostOperationPassThrough },
+      { IRP_MJ_CLEANUP,
+        0,
+        PtPreOperationPassThrough,
+        PtPostOperationPassThrough },
 
-    { IRP_MJ_CREATE_MAILSLOT,
-      0,
-      PtPreOperationPassThrough,
-      PtPostOperationPassThrough },
+      { IRP_MJ_CREATE_MAILSLOT,
+        0,
+        PtPreOperationPassThrough,
+        PtPostOperationPassThrough },
 
-    { IRP_MJ_QUERY_SECURITY,
-      0,
-      PtPreOperationPassThrough,
-      PtPostOperationPassThrough },
+      { IRP_MJ_QUERY_SECURITY,
+        0,
+        PtPreOperationPassThrough,
+        PtPostOperationPassThrough },
 
-    { IRP_MJ_SET_SECURITY,
-      0,
-      PtPreOperationPassThrough,
-      PtPostOperationPassThrough },
+      { IRP_MJ_SET_SECURITY,
+        0,
+        PtPreOperationPassThrough,
+        PtPostOperationPassThrough },
 
-    { IRP_MJ_QUERY_QUOTA,
-      0,
-      PtPreOperationPassThrough,
-      PtPostOperationPassThrough },
+      { IRP_MJ_QUERY_QUOTA,
+        0,
+        PtPreOperationPassThrough,
+        PtPostOperationPassThrough },
 
-    { IRP_MJ_SET_QUOTA,
-      0,
-      PtPreOperationPassThrough,
-      PtPostOperationPassThrough },
+      { IRP_MJ_SET_QUOTA,
+        0,
+        PtPreOperationPassThrough,
+        PtPostOperationPassThrough },
 
-    { IRP_MJ_PNP,
-      0,
-      PtPreOperationPassThrough,
-      PtPostOperationPassThrough },
+      { IRP_MJ_PNP,
+        0,
+        PtPreOperationPassThrough,
+        PtPostOperationPassThrough },
 
-    { IRP_MJ_ACQUIRE_FOR_SECTION_SYNCHRONIZATION,
-      0,
-      PtPreOperationPassThrough,
-      PtPostOperationPassThrough },
+      { IRP_MJ_ACQUIRE_FOR_SECTION_SYNCHRONIZATION,
+        0,
+        PtPreOperationPassThrough,
+        PtPostOperationPassThrough },
 
-    { IRP_MJ_RELEASE_FOR_SECTION_SYNCHRONIZATION,
-      0,
-      PtPreOperationPassThrough,
-      PtPostOperationPassThrough },
+      { IRP_MJ_RELEASE_FOR_SECTION_SYNCHRONIZATION,
+        0,
+        PtPreOperationPassThrough,
+        PtPostOperationPassThrough },
 
-    { IRP_MJ_ACQUIRE_FOR_MOD_WRITE,
-      0,
-      PtPreOperationPassThrough,
-      PtPostOperationPassThrough },
+      { IRP_MJ_ACQUIRE_FOR_MOD_WRITE,
+        0,
+        PtPreOperationPassThrough,
+        PtPostOperationPassThrough },
 
-    { IRP_MJ_RELEASE_FOR_MOD_WRITE,
-      0,
-      PtPreOperationPassThrough,
-      PtPostOperationPassThrough },
+      { IRP_MJ_RELEASE_FOR_MOD_WRITE,
+        0,
+        PtPreOperationPassThrough,
+        PtPostOperationPassThrough },
 
-    { IRP_MJ_ACQUIRE_FOR_CC_FLUSH,
-      0,
-      PtPreOperationPassThrough,
-      PtPostOperationPassThrough },
+      { IRP_MJ_ACQUIRE_FOR_CC_FLUSH,
+        0,
+        PtPreOperationPassThrough,
+        PtPostOperationPassThrough },
 
-    { IRP_MJ_RELEASE_FOR_CC_FLUSH,
-      0,
-      PtPreOperationPassThrough,
-      PtPostOperationPassThrough },
+      { IRP_MJ_RELEASE_FOR_CC_FLUSH,
+        0,
+        PtPreOperationPassThrough,
+        PtPostOperationPassThrough },
 
-    { IRP_MJ_FAST_IO_CHECK_IF_POSSIBLE,
-      0,
-      PtPreOperationPassThrough,
-      PtPostOperationPassThrough },
+      { IRP_MJ_FAST_IO_CHECK_IF_POSSIBLE,
+        0,
+        PtPreOperationPassThrough,
+        PtPostOperationPassThrough },
 
-    { IRP_MJ_NETWORK_QUERY_OPEN,
-      0,
-      PtPreOperationPassThrough,
-      PtPostOperationPassThrough },
+      { IRP_MJ_NETWORK_QUERY_OPEN,
+        0,
+        PtPreOperationPassThrough,
+        PtPostOperationPassThrough },
 
-    { IRP_MJ_MDL_READ,
-      0,
-      PtPreOperationPassThrough,
-      PtPostOperationPassThrough },
+      { IRP_MJ_MDL_READ,
+        0,
+        PtPreOperationPassThrough,
+        PtPostOperationPassThrough },
 
-    { IRP_MJ_MDL_READ_COMPLETE,
-      0,
-      PtPreOperationPassThrough,
-      PtPostOperationPassThrough },
+      { IRP_MJ_MDL_READ_COMPLETE,
+        0,
+        PtPreOperationPassThrough,
+        PtPostOperationPassThrough },
 
-    { IRP_MJ_PREPARE_MDL_WRITE,
-      0,
-      PtPreOperationPassThrough,
-      PtPostOperationPassThrough },
+      { IRP_MJ_PREPARE_MDL_WRITE,
+        0,
+        PtPreOperationPassThrough,
+        PtPostOperationPassThrough },
 
-    { IRP_MJ_MDL_WRITE_COMPLETE,
-      0,
-      PtPreOperationPassThrough,
-      PtPostOperationPassThrough },
+      { IRP_MJ_MDL_WRITE_COMPLETE,
+        0,
+        PtPreOperationPassThrough,
+        PtPostOperationPassThrough },
 
-    { IRP_MJ_VOLUME_MOUNT,
-      0,
-      PtPreOperationPassThrough,
-      PtPostOperationPassThrough },
+      { IRP_MJ_VOLUME_MOUNT,
+        0,
+        PtPreOperationPassThrough,
+        PtPostOperationPassThrough },
 
-    { IRP_MJ_VOLUME_DISMOUNT,
-      0,
-      PtPreOperationPassThrough,
-      PtPostOperationPassThrough },
+      { IRP_MJ_VOLUME_DISMOUNT,
+        0,
+        PtPreOperationPassThrough,
+        PtPostOperationPassThrough },*/
 
-    { IRP_MJ_OPERATION_END }*/
+      { IRP_MJ_OPERATION_END }
+
 };
 
 //
@@ -671,16 +672,16 @@ Return Value:
     //        actually granted.
     //
 
-    if (PtDoRequestOperationStatus( Data )) {
+    if (PtDoRequestOperationStatus(Data)) {
 
         status = FltRequestOperationStatusCallback( Data,
                                                     PtOperationStatusCallback,
-                                                    (PVOID)(++OperationStatusCtx) );
+                                                    (PVOID)(++OperationStatusCtx));
         if (!NT_SUCCESS(status)) {
 
-            PT_DBG_PRINT( PTDBG_TRACE_OPERATION_STATUS,
-                          ("PassThrough!PtPreOperationPassThrough: FltRequestOperationStatusCallback Failed, status=%08x\n",
-                           status) );
+            PT_DBG_PRINT(PTDBG_TRACE_OPERATION_STATUS,
+                ("PassThrough!PtPreOperationPassThrough: FltRequestOperationStatusCallback Failed, status=%08x\n",
+                    status));
         }
     }
 
@@ -708,7 +709,7 @@ Return Value:
     //    DbgPrint("[-] PassThrough, FltParseFileNameInformation failed, FileName = %wZ\n", 
     //        Data->Iopb->TargetFileObject->FileName);
     //}
-
+    /*
     else if ( // Проверка на совпадение расширения с нашим шаблоном
         RtlEqualUnicodeString(
             &RecuiredFileExtension,
@@ -768,7 +769,7 @@ Return Value:
         // Так как IRP-коды у Read и Write буфферов одинаковые, можем не писать следующее:
         //DbgPrint("ReadBuffer = %s\n", (char*)Data->Iopb->Parameters.Read.ReadBuffer);
         //((char*)Data->Iopb->Parameters.Read.ReadBuffer)[0] = '&';
-    }
+    }*/
 
 
     return FLT_PREOP_SUCCESS_WITH_CALLBACK;
@@ -875,19 +876,6 @@ Return Value:
 
     // Начало
     NTSTATUS status;
-    if (PtDoRequestOperationStatus(Data)) {
-
-        status = FltRequestOperationStatusCallback(Data,
-            PtOperationStatusCallback,
-            (PVOID)(++OperationStatusCtx));
-        if (!NT_SUCCESS(status)) {
-
-            PT_DBG_PRINT(PTDBG_TRACE_OPERATION_STATUS,
-                ("PassThrough!PtPreOperationPassThrough: FltRequestOperationStatusCallback Failed, status=%08x\n",
-                    status));
-        }
-    }
-
     PFLT_FILE_NAME_INFORMATION NameInfo = NULL; // Объявление структуры
     status = FltGetFileNameInformation(
         Data,
@@ -906,84 +894,94 @@ Return Value:
         RtlEqualUnicodeString(
             &RecuiredFileExtension,
             &NameInfo->Extension, \
-            FALSE)) {
+            FALSE)) 
+    {
 
-        DbgPrint("[+] POST: FileName = %wZ, extention: %wZ, parentDir: %wZ, volume: %wZ\n",
+        /*DbgPrint("[+] POST: FileName = %wZ, extention: %wZ, parentDir: %wZ, volume: %wZ\n",
             NameInfo->Name,
             NameInfo->Extension,
             NameInfo->ParentDir,
-            NameInfo->Volume);
+            NameInfo->Volume);*/
 
-        if (Data->Iopb->MajorFunction == IRP_MJ_READ) {
-            DbgPrint("POST: IRP_MJ_READ");
-            DbgPrint("POST: ReadBuffer = %s\n", (char*)Data->Iopb->Parameters.Read.ReadBuffer);
-            //DbgPrint("POST: ReadBuffer address = %x\n", &(Data->Iopb->Parameters.Read.ReadBuffer));
+
+         if (Data->Iopb->MajorFunction == IRP_MJ_WRITE) {
+
+            DbgPrint("POST: IRP_MJ_WRITE");
+            //DbgPrint(Data->Iopb->Parameters.Write.WriteBuffer);//вывод в консоль данных перехваченного буфера
+            DbgPrint("POST: WriteBuffer");
+            DbgPrint(Data->Iopb->Parameters.Write.WriteBuffer);
+            //DbgPrint("POST: WriteBuffer address = %x\n", &(Data->Iopb->Parameters.Write.WriteBuffer));
 
             if (Data->Iopb->Parameters.Write.WriteBuffer) {
                 DbgPrint("ENCRYPTION");
                 uint8_t hexarray[1024];
                 memset(hexarray, 0, 24);
+
+                DbgPrint("hexarray");
+                DbgPrint(hexarray);
+
                 for (int i = 0; i < strlen(Data->Iopb->Parameters.Write.WriteBuffer); i++) {
                     hexarray[i] = (uint8_t)((char*)Data->Iopb->Parameters.Write.WriteBuffer)[i];
                 }
 
-                unsigned char KEY[] = "1234567890ABCDEF";
+                unsigned char KEY[] = "7A129815A2BD26FD";
                 uint8_t* key = (uint8_t*)KEY;
                 uint8_t iv[] = { 0x75, 0x52, 0x5f, 0x69,
                     0x6e, 0x74, 0x65, 0x72,
                     0x65, 0x73, 0x74, 0x69,
                     0x6e, 0x67, 0x21, 0x21 };
 
-                struct AES_ctx ctx;
+                struct AES_ctx ctx; //создание объекта шифра (контекст, который будет хранить ключ и инициализирующий вектор)
 
                 AES_init_ctx_iv(&ctx, key, iv);
-                AES_CBC_decrypt_buffer(&ctx, hexarray, 1024);
+                AES_CBC_encrypt_buffer(&ctx, hexarray, 1024);
 
                 for (int i = 0; i < 1024; i++) {
                     ((char*)Data->Iopb->Parameters.Write.WriteBuffer)[i] = hexarray[i];
                 }
             }
-            else if (Data->Iopb->MajorFunction == IRP_MJ_WRITE) {
-                DbgPrint("POST: IRP_MJ_WRITE");
-                DbgPrint("POST: WriteBuffer = %s\n", (char*)Data->Iopb->Parameters.Write.WriteBuffer);
-                DbgPrint("POST: WriteBuffer address = %x\n", &(Data->Iopb->Parameters.Write.WriteBuffer));
+         }
+         else if (Data->Iopb->MajorFunction == IRP_MJ_READ) {
+             DbgPrint("POST: IRP_MJ_READ");
+             DbgPrint("POST: ReadBuffer:");
+             DbgPrint(Data->Iopb->Parameters.Read.ReadBuffer);
+             //DbgPrint("POST: ReadBuffer address = %x\n", &(Data->Iopb->Parameters.Read.ReadBuffer));
 
-                if (Data->Iopb->Parameters.Write.WriteBuffer) {
-                    DbgPrint("DECRYPTION");
-                    uint8_t hexarray[1024];
-                    memset(hexarray, 0, 24);
+             if (Data->Iopb->Parameters.Write.WriteBuffer) {
+                 DbgPrint("DECRYPTION");
+                 uint8_t hexarray[1024];
+                 memset(hexarray, 0, 24); // Заполняем массив нулями
+                 for (int i = 0; i < strlen(Data->Iopb->Parameters.Write.WriteBuffer); i++) {
+                     hexarray[i] = (uint8_t)((char*)Data->Iopb->Parameters.Write.WriteBuffer)[i];
+                 }
 
-                    for (int i = 0; i < strlen(Data->Iopb->Parameters.Write.WriteBuffer); i++) {
-                        hexarray[i] = (uint8_t)((char*)Data->Iopb->Parameters.Write.WriteBuffer)[i];
-                    }
+                 unsigned char KEY[] = "7A129815A2BD26FD";
+                 uint8_t* key = (uint8_t*)KEY;
+                 uint8_t iv[] = { 0x75, 0x52, 0x5f, 0x69,
+                     0x6e, 0x74, 0x65, 0x72,
+                     0x65, 0x73, 0x74, 0x69,
+                     0x6e, 0x67, 0x21, 0x21 };
 
-                    unsigned char KEY[] = "1234567890ABCDEF";
-                    uint8_t* key = (uint8_t*)KEY;
-                    uint8_t iv[] = { 0x75, 0x52, 0x5f, 0x69,
-                        0x6e, 0x74, 0x65, 0x72,
-                        0x65, 0x73, 0x74, 0x69,
-                        0x6e, 0x67, 0x21, 0x21 };
+                 struct AES_ctx ctx;
 
-                    struct AES_ctx ctx;
+                 AES_init_ctx_iv(&ctx, key, iv);
+                 AES_CBC_decrypt_buffer(&ctx, hexarray, 1024);
+                 DbgPrint("POST: Result:");
+                 DbgPrint(hexarray);
 
-                    AES_init_ctx_iv(&ctx, key, iv);
-                    AES_CBC_encrypt_buffer(&ctx, hexarray, 1024);
-
-                    for (int i = 0; i < 1024; i++) {
-                        ((char*)Data->Iopb->Parameters.Write.WriteBuffer)[i] = hexarray[i];
-                    }
-                }
-            }
-            else if (Data->Iopb->MajorFunction == IRP_MJ_CREATE) {
-                DbgPrint("POST: IRP_MJ_CREATE");
-            }
-            else {
-                DbgPrint("POST: IRP_MJ_ = %x\n", Data->Iopb->MajorFunction);
-            }
-        }
-
-        return FLT_POSTOP_FINISHED_PROCESSING;
+                 for (int i = 0; i < strlen(Data->Iopb->Parameters.Write.WriteBuffer); i++) {
+                     ((char*)Data->Iopb->Parameters.Write.WriteBuffer)[i] = hexarray[i];
+                 }
+             }
+         }
+            //else if (Data->Iopb->MajorFunction == IRP_MJ_CREATE) {
+            //    DbgPrint("POST: IRP_MJ_CREATE");
+            //}
+         else {
+            DbgPrint("POST: IRP_MJ_ = %x\n", Data->Iopb->MajorFunction);
+         }
     }
+    return FLT_POSTOP_FINISHED_PROCESSING;
 }
 
 
