@@ -1,0 +1,27 @@
+{
+    "sites": [
+        {
+            "site": "mospolytech.ru",
+            "login": "dMThcXI+nWxk",
+            "password": "d9DiZ3cknG0nH2M="
+        },
+
+        {
+            "site": "mos.ru",
+            "login": "at7if3YijWE=",
+            "password": "dsb0ZnQy3zslGmcy"
+        },
+
+        {
+            "site": "gmail.com",
+            "login": "at7/cXYuhWhyTxJjLU2/1hiIHzk=",
+            "password": "d9DiZ3cknG0nHGEwdQ=="
+        },
+
+        {
+            "site": "vk.com",
+            "login": "LIaoJTNz2D0jF2o9",
+            "password": "d9DiZ0YknF99QRxwAUeC33s="
+        }
+    ]
+}

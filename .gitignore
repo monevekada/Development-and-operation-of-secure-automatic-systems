@@ -8,5 +8,5 @@ Makefile
 .vs/
 *.apk
 *.exe
-passThrough/x64/
-SimpleOpener/x64/
+Lab_1/passThrough/x64/
+Lab_1/SimpleOpener/x64/
